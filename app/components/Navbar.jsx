@@ -1,24 +1,36 @@
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 bg-slate-700 py-6 px-5 md:px-16">
+    <nav className="sticky top-0 bg-slate-600 py-6 px-5 md:px-16 shadow-xl z-50">
       <ul className="flex gap-8 justify-center text-xl font-medium md:justify-end md:gap-10 lg:gap-20">
         <li>
-          <a href="#home" className="cursor-pointer">
+          <a
+            href="#home"
+            className="cursor-pointer hover:text-emerald-500 transition-all duration-300"
+          >
             Home
           </a>
         </li>
         <li>
-          <a href="#about" className="cursor-pointer">
+          <a
+            href="#about"
+            className="cursor-pointer hover:text-emerald-500 transition-all duration-300"
+          >
             About
           </a>
         </li>
         <li>
-          <a href="#projects" className="cursor-pointer">
+          <a
+            href="#projects"
+            className="cursor-pointer hover:text-emerald-500 transition-all duration-300"
+          >
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" className="cursor-pointer">
+          <a
+            href="#contact"
+            className="cursor-pointer hover:text-emerald-500 transition-all duration-300"
+          >
             Contact
           </a>
         </li>
