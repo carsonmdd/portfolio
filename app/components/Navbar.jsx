@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <nav className="sticky top-0">
-      <ul className="flex gap-4 justify-between text-lg py-6 px-5 bg-slate-700">
+    <nav className="sticky top-0 bg-slate-700 py-6 px-5 md:px-16">
+      <ul className="flex gap-8 justify-center text-xl font-medium md:justify-end md:gap-10 lg:gap-20">
         <li>
           <a href="#home" className="cursor-pointer">
             Home

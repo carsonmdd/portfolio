@@ -6,9 +6,9 @@ const ContactSection = () => {
       <h1 className="text-center text-4xl font-semibold mb-6">Contact</h1>
       <div className="text-center">
         <p className="mb-8 text-xl">
-          Have a question or want to work together? Let's connect!
+          {"Have a question or want to work together? Let's connect!"}
         </p>
-        <div className="text-4xl text-emerald-500 flex justify-evenly">
+        <div className="text-4xl text-emerald-500 flex justify-evenly max-w-lg mx-auto">
           <a href="mailto:cmd52465@gmail.com">
             <AiOutlineMail />
           </a>
