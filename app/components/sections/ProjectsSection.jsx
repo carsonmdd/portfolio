@@ -5,6 +5,7 @@ import FlowerClassifierImg from "../../../public/flower-classifier-thumbnail.png
 import HeartDiseaseImg from "../../../public/heart-disease-thumbnail.jpeg";
 import MazeSolverImg from "../../../public/maze-solver-thumbnail.png";
 import SnakeGameImg from "../../../public/snake-game-thumbnail.png";
+import ProductStoreImg from "../../../public/product-store-thumbnail.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -55,6 +56,14 @@ const ProjectsSection = () => {
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
       link: "https://github.com/carsonmdd/Snake-Game",
+    },
+    {
+      id: 7,
+      thumbnail: ProductStoreImg,
+      name: "Product Store",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
+      link: "https://github.com/carsonmdd/product-store",
     },
   ];
 

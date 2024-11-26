@@ -17,7 +17,7 @@ const HomeSection = () => {
       </p>
       <a
         href="#about"
-        className="flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-light hover:bg-emerald-600 hover:border-emerald-500 transition-all duration-300"
+        className="flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-light hover:shadow-[inset_12rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms]"
       >
         <span className="mr-2">View my work</span>
         <HiOutlineArrowSmallDown className="my-auto" />

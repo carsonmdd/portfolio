@@ -13,7 +13,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="p-32">
+    <section id="contact" className="pt-32">
       <h1 className="text-center text-4xl font-semibold mb-6">Contact</h1>
       <div className="text-center">
         <p className="mb-8 text-xl">
