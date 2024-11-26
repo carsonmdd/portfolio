@@ -13,8 +13,16 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+#particle-background {
+  z-index: -1;
+  height: 20%;
+  width: 100%;
+  position: absolute;
 }

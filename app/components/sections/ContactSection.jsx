@@ -19,7 +19,7 @@ const ContactSection = () => {
         <p className="mb-8 text-xl">
           {"Have a question or want to work together? Let's connect!"}
         </p>
-        <div className="text-4xl text-emerald-500 flex justify-evenly max-w-md mx-auto">
+        <div className="text-4xl text-emerald-500 flex justify-evenly max-w-xs mx-auto">
           {contactButtons.map((button) => (
             <ContactButton
               key={button.id}
