@@ -14,7 +14,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="pt-32">
-      <h1 className="text-center text-4xl font-semibold mb-6">Contact</h1>
+      <h1 className="text-center text-5xl font-semibold mb-6">Contact</h1>
       <div className="text-center">
         <p className="mb-8 text-xl">
           {"Have a question or want to work together? Let's connect!"}

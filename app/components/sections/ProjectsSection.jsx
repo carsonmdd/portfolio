@@ -14,62 +14,62 @@ const ProjectsSection = () => {
       thumbnail: InstaLogImg,
       name: "InstaLog",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
+        "Offline data logging application with CSV and Shapefile integration built with Tkinter and Pandas",
       link: "https://github.com/carsonmdd/InstaLog",
     },
     {
       id: 2,
-      thumbnail: ZotMusicImg,
-      name: "Zot Music",
+      thumbnail: ProductStoreImg,
+      name: "Product Store",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
-      link: "https://github.com/carsonmdd/Zot-Music",
+        "Full-stack general product store application built leveraging the MERN stack (MongoDB, Express.js, React, Node.js)",
+      link: "https://github.com/carsonmdd/product-store",
     },
     {
       id: 3,
       thumbnail: FlowerClassifierImg,
       name: "Flower Classifier",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
+        "Convolutional neural network for flower speceis identification built with Keras, Scikit-Learn, and Pandas",
       link: "https://github.com/carsonmdd/Flower-Classification",
     },
     {
       id: 4,
-      thumbnail: HeartDiseaseImg,
-      name: "Heart Disease Predictor",
+      thumbnail: ZotMusicImg,
+      name: "Zot Music",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
-      link: "https://github.com/carsonmdd/Heart-Disease-Predictor",
+        "Full-stack Spotify library management and recommendation application built with Flask, Bootstrap, and SQLite",
+      link: "https://github.com/carsonmdd/Zot-Music",
     },
     {
       id: 5,
-      thumbnail: MazeSolverImg,
-      name: "Maze Solver",
+      thumbnail: HeartDiseaseImg,
+      name: "Heart Disease Predictor",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
-      link: "https://github.com/carsonmdd/Maze-Solver",
+        "Heart disease prediction model with data visualization, preprocessing, and grid search built with Scikit-Learn, Pandas, and Seaborn",
+      link: "https://github.com/carsonmdd/Heart-Disease-Predictor",
     },
     {
       id: 6,
       thumbnail: SnakeGameImg,
       name: "Snake Game",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
+        "Classic snake game developed with Pygame, featuring dynamic gameplay, a score-tracking system, and powerups",
       link: "https://github.com/carsonmdd/Snake-Game",
     },
     {
       id: 7,
-      thumbnail: ProductStoreImg,
-      name: "Product Store",
+      thumbnail: MazeSolverImg,
+      name: "Maze Solver",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptate architecto minus pariatur quaerat reiciendis.",
-      link: "https://github.com/carsonmdd/product-store",
+        "Maze generator and solver utilizing BFS and DFS algorithms built in Java",
+      link: "https://github.com/carsonmdd/Maze-Solver",
     },
   ];
 
   return (
     <section id="projects" className="pt-32">
-      <h1 className="text-center text-4xl font-semibold mb-20">Projects</h1>
+      <h1 className="text-center text-5xl font-semibold mb-20">Projects</h1>
       <div className="grid grid-cols-1 gap-16 place-items-center px-10 min-[840px]:grid-cols-2 min-[840px]:max-w-4xl xl:grid-cols-3 xl:max-w-[90rem] mx-auto">
         {projects.map((project) => (
           <ProjectCard

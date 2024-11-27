@@ -26,3 +26,51 @@ html {
   width: 100%;
   position: absolute;
 }
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left-animation {
+  animation: slide-in-left 800ms ease-in-out;
+}
+
+.slide-in-right-animation {
+  animation: slide-in-right 800ms ease-in-out;
+}
+
+.slide-in-bottom-animation {
+  animation: slide-in-bottom 800ms ease-in-out;
+}
