@@ -10,11 +10,11 @@ const ProjectCard = ({ thumbnail, name, description, link }) => {
   return (
     <div
       ref={ref}
-      className={`border border-emerald-500 rounded-xl w-96 h-[26rem] bg-slate-700 shadow-2xl hover:-translate-y-2 transition-all duration-300 invisible ${
+      className={`border border-emerald-500 rounded-xl w-[28rem] h-[30rem] bg-slate-700 shadow-2xl hover:-translate-y-2 transition-all duration-300 invisible ${
         inView ? "slide-in-bottom-animation" : ""
       }`}
     >
-      <div className="h-48 flex p-5">
+      <div className="h-[15rem] flex justify-center p-5">
         <Image
           src={thumbnail}
           alt={`${name} Thumbnail`}
@@ -22,8 +22,10 @@ const ProjectCard = ({ thumbnail, name, description, link }) => {
         />
       </div>
       <div className="px-5">
-        <h3 className="text-xl mb-2">{name}</h3>
-        <p className="leading-7 mb-8">{description}</p>
+        <div className="h-[10rem]">
+          <h3 className="text-xl mb-2">{name}</h3>
+          <p className="leading-7 mb-8">{description}</p>
+        </div>
         <a
           href={link}
           target="_blank"
