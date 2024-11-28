@@ -1,8 +1,19 @@
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 const ProjectCard = ({ thumbnail, name, description, link }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
-    <div className="border border-emerald-500 rounded-xl w-96 h-[26rem] bg-slate-700 shadow-2xl hover:-translate-y-2 transition-all duration-300">
+    <div
+      ref={ref}
+      className={`border border-emerald-500 rounded-xl w-96 h-[26rem] bg-slate-700 shadow-2xl hover:-translate-y-2 transition-all duration-300 invisible ${
+        inView ? "slide-in-bottom-animation" : ""
+      }`}
+    >
       <div className="h-48 flex p-5">
         <Image
           src={thumbnail}

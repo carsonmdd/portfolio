@@ -1,3 +1,5 @@
+"use client";
+
 import ProjectCard from "../ProjectCard";
 import InstaLogImg from "../../../public/InstaLog-thumbnail.png";
 import ZotMusicImg from "../../../public/ZotMusic-thumbnail.png";
@@ -6,8 +8,14 @@ import HeartDiseaseImg from "../../../public/heart-disease-thumbnail.jpeg";
 import MazeSolverImg from "../../../public/maze-solver-thumbnail.png";
 import SnakeGameImg from "../../../public/snake-game-thumbnail.png";
 import ProductStoreImg from "../../../public/product-store-thumbnail.png";
+import { useInView } from "react-intersection-observer";
 
 const ProjectsSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   const projects = [
     {
       id: 1,
@@ -68,8 +76,15 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="pt-32">
-      <h1 className="text-center text-5xl font-semibold mb-20">Projects</h1>
+    <section id="projects" className="pt-32 px-8">
+      <h1
+        ref={ref}
+        className={`text-center text-5xl font-semibold mb-20 invisible ${
+          inView ? "slide-in-top-animation" : ""
+        }`}
+      >
+        Projects
+      </h1>
       <div className="grid grid-cols-1 gap-16 place-items-center px-10 min-[840px]:grid-cols-2 min-[840px]:max-w-4xl xl:grid-cols-3 xl:max-w-[90rem] mx-auto">
         {projects.map((project) => (
           <ProjectCard

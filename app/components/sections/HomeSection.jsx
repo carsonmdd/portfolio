@@ -16,7 +16,7 @@ const HomeSection = () => {
     >
       <h1
         ref={ref}
-        className={`text-5xl mb-5 font-light ${
+        className={`text-5xl mb-5 font-light invisible ${
           inView ? "slide-in-left-animation" : ""
         }`}
       >
@@ -25,7 +25,7 @@ const HomeSection = () => {
       </h1>
       <p
         ref={ref}
-        className={`text-3xl mb-16 max-w-2xl font-extralight ${
+        className={`text-3xl mb-16 max-w-2xl font-extralight invisible ${
           inView ? "slide-in-right-animation" : ""
         }`}
       >
@@ -36,7 +36,7 @@ const HomeSection = () => {
       <a
         href="#about"
         ref={ref}
-        className={`flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-light hover:shadow-[inset_12rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms] ${
+        className={`flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-light hover:shadow-[inset_12rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms] invisible ${
           inView ? "slide-in-bottom-animation" : ""
         }`}
       >

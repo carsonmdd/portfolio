@@ -1,3 +1,5 @@
+"use client";
+
 import ReactImg from "../../../public/react.png";
 import MongoDBImg from "../../../public/mongodb.png";
 import ExpressImg from "../../../public/express.png";
@@ -13,29 +15,47 @@ import PandasImg from "../../../public/pandas.png";
 import SkillCard from "../SkillCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { useInView } from "react-intersection-observer";
 
 const AboutSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   const skills = [
     { id: 1, icon: ReactImg, name: "React" },
     { id: 2, icon: MongoDBImg, name: "MongoDB" },
     { id: 3, icon: ExpressImg, name: "Express.js" },
-    { id: 4, icon: TensorflowImg, name: "Tensorflow" },
-    { id: 5, icon: NodeImg, name: "Node.js" },
-    { id: 6, icon: ScikitLearnImg, name: "Scikit-Learn" },
-    { id: 7, icon: JavaImg, name: "Java" },
-    { id: 8, icon: CppImg, name: "C++" },
-    { id: 9, icon: GitImg, name: "Git" },
-    { id: 10, icon: FlaskImg, name: "Flask" },
-    { id: 11, icon: TailwindImg, name: "Tailwind CSS" },
-    { id: 12, icon: PandasImg, name: "Pandas" },
+    { id: 4, icon: NodeImg, name: "Node.js" },
+    { id: 5, icon: FlaskImg, name: "Flask" },
+    { id: 6, icon: TailwindImg, name: "Tailwind CSS" },
+    { id: 7, icon: ScikitLearnImg, name: "Scikit-Learn" },
+    { id: 8, icon: TensorflowImg, name: "Tensorflow" },
+    { id: 9, icon: PandasImg, name: "Pandas" },
+    { id: 10, icon: GitImg, name: "Git" },
+    { id: 11, icon: JavaImg, name: "Java" },
+    { id: 12, icon: CppImg, name: "C++" },
   ];
 
   return (
-    <section id="about" className="pt-32">
-      <h1 className="text-center text-5xl font-semibold mb-20">About</h1>
+    <section id="about" className="pt-32 px-8">
+      <h1
+        ref={ref}
+        className={`text-center text-5xl font-semibold mb-20 invisible ${
+          inView ? "slide-in-top-animation" : ""
+        }`}
+      >
+        About
+      </h1>
       <div className="flex justify-center mx-15">
         <div className="flex flex-col items-center xl:flex-row xl:items-center xl:justify-center max-w-7xl">
-          <div className="px-12 mb-10 md:max-w-2xl lg:flex-1">
+          <div
+            ref={ref}
+            className={`px-12 mb-10 md:max-w-2xl lg:flex-1 invisible ${
+              inView ? "slide-in-left-animation" : ""
+            }`}
+          >
             <div className="text-center mb-16">
               <FontAwesomeIcon
                 icon={faUser}
