@@ -65,19 +65,25 @@ const AboutSection = () => {
             <h2 className="font-medium mb-2 text-3xl">Carson Davis</h2>
             <p className="leading-8 text-2xl">
               I'm a third year student studying{" "}
-              <span className="text-emerald-500">Software Engineering</span> at
-              UC Irvine with a deep passion for{" "}
-              <span className="text-emerald-500">
+              <span className="text-emerald-500 font-normal">
+                Software Engineering
+              </span>{" "}
+              at UC Irvine with a deep passion for{" "}
+              <span className="text-emerald-500 font-normal">
                 full-stack web development
               </span>{" "}
               and{" "}
-              <span className="text-emerald-500">artificial intelligence</span>.
-              With a focus on problem-solving and user-centered design, I strive
-              to create solutions for{" "}
-              <span className="text-emerald-500">real-world problems</span>.
-              Outside of coding, I like to spend my time playing piano, fishing,
-              and exploring the outdoors. I'm always eager to learn and connect
-              with like-minded individuals and grow as a developer.
+              <span className="text-emerald-500 font-normal">
+                artificial intelligence
+              </span>
+              . With a focus on problem-solving and user-centered design, I
+              strive to create solutions for{" "}
+              <span className="text-emerald-500 font-normal">
+                real-world problems
+              </span>
+              . Outside of coding, I like to spend my time playing piano,
+              fishing, and exploring the outdoors. I'm always eager to learn and
+              connect with like-minded individuals and grow as a developer.
             </p>
           </div>
           <div className="grid grid-cols-3 gap-5 place-items-center px-10 w-[35rem] md:grid-cols-4 md:w-[40rem] md:gap-10 lg:flex-1">
