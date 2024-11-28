@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 const ProjectCard = ({ thumbnail, name, description, link }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.15,
   });
 
   return (
