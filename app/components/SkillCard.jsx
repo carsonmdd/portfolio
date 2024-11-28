@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const SkillCard = ({ icon, name }) => {
-  const [randomDelay, setRandomDelay] = useState(800);
+  const [randomDelay, setRandomDelay] = useState(null);
 
   useEffect(() => {
     const randomNumber = (Math.floor(Math.random() * 6) / 10).toFixed(1);
