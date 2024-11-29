@@ -6,7 +6,7 @@ import ExpressImg from "../../../public/express.png";
 import TensorflowImg from "../../../public/tensorflow.png";
 import NodeImg from "../../../public/node.png";
 import ScikitLearnImg from "../../../public/scikit-learn.png";
-import JavaImg from "../../../public/Java.png";
+import JavaImg from "../../../public/java.png";
 import CppImg from "../../../public/c++.png";
 import GitImg from "../../../public/git.png";
 import FlaskImg from "../../../public/flask.png";
