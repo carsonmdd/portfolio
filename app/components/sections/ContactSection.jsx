@@ -28,7 +28,7 @@ const ContactSection = () => {
           inView ? "slide-in-left-animation" : ""
         }`}
       >
-        Contact
+        {"Contact"}
       </h1>
       <div className="text-center">
         <p

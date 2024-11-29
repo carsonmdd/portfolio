@@ -21,7 +21,7 @@ const HomeSection = () => {
         }`}
       >
         {"Hi, I'm "}
-        <span className="text-emerald-500">Carson</span>.
+        <span className="text-emerald-500">{"Carson"}</span>.
       </h1>
       <p
         ref={ref}
@@ -40,7 +40,7 @@ const HomeSection = () => {
           inView ? "slide-in-bottom-animation" : ""
         }`}
       >
-        <span className="mr-2">View my work</span>
+        <span className="mr-2">{"View my work"}</span>
         <HiOutlineArrowSmallDown className="my-auto" />
       </a>
     </section>
