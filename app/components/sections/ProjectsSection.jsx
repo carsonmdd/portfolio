@@ -22,7 +22,7 @@ const ProjectsSection = () => {
       thumbnail: InstaLogImg,
       name: "InstaLog",
       description:
-        "Offline data logging application with CSV and Shapefile integration built with Tkinter and Pandas",
+        "Offline data logging application with CSV, GPS, and Shapefile integration built with Tkinter and Pandas",
       link: "https://github.com/carsonmdd/InstaLog",
     },
     {
