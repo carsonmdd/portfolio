@@ -22,9 +22,7 @@ html {
 
 #particle-background {
   z-index: -1;
-  height: 20%;
-  width: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 @keyframes slide-in-left {

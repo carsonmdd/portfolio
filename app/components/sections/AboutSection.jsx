@@ -20,7 +20,7 @@ import { useInView } from "react-intersection-observer";
 const AboutSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   const skills = [
@@ -43,13 +43,18 @@ const AboutSection = () => {
       <h1
         ref={ref}
         className={`text-center text-5xl font-semibold mb-20 invisible ${
-          inView ? "slide-in-top-animation" : ""
+          inView && "slide-in-top-animation"
         }`}
       >
         {"About"}
       </h1>
-      <div className="flex flex-col items-center w-full md:flex-row md:justify-center">
-        <div className="border flex flex-col justify-center p-6 max-w-[40rem] md:flex-1">
+      <div
+        ref={ref}
+        className={`flex flex-col items-center w-full md:flex-row md:justify-center invisible ${
+          inView && "slide-in-top-animation"
+        }`}
+      >
+        <div className="flex flex-col justify-center p-6 max-w-[40rem] md:flex-1">
           <FontAwesomeIcon
             icon={faUser}
             className="text-[10rem] text-emerald-400 mb-16"
@@ -81,7 +86,7 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className="border grid grid-cols-3 place-items-center gap-5 w-full max-w-[25rem] p-5 md:flex-1 lg:grid-cols-4 lg:max-w-[35rem] lg:gap-10">
+        <div className="grid grid-cols-3 place-items-center gap-5 w-full max-w-[25rem] p-5 md:flex-1 lg:grid-cols-4 lg:max-w-[35rem] lg:gap-10">
           {skills.map((skill) => (
             <SkillCard key={skill.id} icon={skill.icon} name={skill.name} />
           ))}

@@ -13,7 +13,7 @@ import { useInView } from "react-intersection-observer";
 const ProjectsSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   const projects = [
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
       <h1
         ref={ref}
         className={`text-center text-5xl font-semibold mb-20 invisible ${
-          inView ? "slide-in-top-animation" : ""
+          inView && "slide-in-top-animation"
         }`}
       >
         {"Projects"}

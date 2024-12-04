@@ -10,8 +10,8 @@ const ProjectCard = ({ thumbnail, name, description, link }) => {
   return (
     <div
       ref={ref}
-      className={`border border-emerald-500 rounded-xl w-[28rem] h-[30rem] bg-slate-700 shadow-2xl hover:-translate-y-2 transition-all duration-300 invisible ${
-        inView ? "slide-in-bottom-animation" : ""
+      className={`border border-emerald-500 rounded-xl w-[22rem] h-[30rem] sm:w-[448px] sm:h-[480px] bg-slate-700 shadow-2xl hover:-translate-y-2 transition-all duration-300 invisible ${
+        inView && "slide-in-bottom-animation"
       }`}
     >
       <div className="h-[15rem] flex justify-center p-5">

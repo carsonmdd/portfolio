@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 const ContactSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   const contactButtons = [
@@ -21,11 +21,11 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="px-14 pt-32 pb-6">
+    <section id="contact" className="px-14 pt-32 pb-20">
       <h1
         ref={ref}
         className={`text-center text-5xl font-semibold mb-6 invisible ${
-          inView ? "slide-in-left-animation" : ""
+          inView && "slide-in-left-animation"
         }`}
       >
         {"Contact"}
@@ -34,7 +34,7 @@ const ContactSection = () => {
         <p
           ref={ref}
           className={`mb-8 text-xl invisible ${
-            inView ? "slide-in-right-animation" : ""
+            inView && "slide-in-right-animation"
           }`}
         >
           {"Have a question or want to work together? Let's connect!"}
@@ -42,7 +42,7 @@ const ContactSection = () => {
         <div
           ref={ref}
           className={`text-4xl text-emerald-500 flex justify-evenly max-w-xs mx-auto invisible ${
-            inView ? "slide-in-bottom-animation" : ""
+            inView && "slide-in-bottom-animation"
           }`}
         >
           {contactButtons.map((button) => (
