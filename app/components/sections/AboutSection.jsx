@@ -39,7 +39,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="pt-32 px-8">
+    <section id="about" className="pt-32">
       <h1
         ref={ref}
         className={`text-center text-5xl font-semibold mb-20 invisible ${
@@ -48,20 +48,13 @@ const AboutSection = () => {
       >
         {"About"}
       </h1>
-      <div className="flex justify-center mx-15">
-        <div className="flex flex-col items-center xl:flex-row xl:items-center xl:justify-center max-w-7xl">
-          <div
-            ref={ref}
-            className={`px-12 mb-10 md:max-w-2xl lg:flex-1 invisible ${
-              inView ? "slide-in-left-animation" : ""
-            }`}
-          >
-            <div className="text-center mb-16">
-              <FontAwesomeIcon
-                icon={faUser}
-                className="text-[10rem] text-emerald-400"
-              />
-            </div>
+      <div className="flex flex-col items-center w-full md:flex-row md:justify-center">
+        <div className="border flex flex-col justify-center p-6 max-w-[40rem] md:flex-1">
+          <FontAwesomeIcon
+            icon={faUser}
+            className="text-[10rem] text-emerald-400 mb-16"
+          />
+          <div>
             <h2 className="font-medium mb-2 text-3xl">Carson Davis</h2>
             <p className="leading-8 text-2xl">
               {"I'm a third year student studying "}
@@ -87,11 +80,11 @@ const AboutSection = () => {
               }
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-5 place-items-center px-10 w-[35rem] md:grid-cols-4 md:w-[40rem] md:gap-10 lg:flex-1">
-            {skills.map((skill) => (
-              <SkillCard key={skill.id} icon={skill.icon} name={skill.name} />
-            ))}
-          </div>
+        </div>
+        <div className="border grid grid-cols-3 place-items-center gap-5 w-full max-w-[25rem] p-5 md:flex-1 lg:grid-cols-4 lg:max-w-[35rem] lg:gap-10">
+          {skills.map((skill) => (
+            <SkillCard key={skill.id} icon={skill.icon} name={skill.name} />
+          ))}
         </div>
       </div>
     </section>

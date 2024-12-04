@@ -12,7 +12,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="w-full h-screen flex flex-col items-center justify-center text-center"
+      className="w-full h-screen flex flex-col items-center justify-center text-center pt-6 px-6"
     >
       <h1
         ref={ref}

@@ -38,7 +38,7 @@ const ProjectsSection = () => {
       thumbnail: FlowerClassifierImg,
       name: "Flower Classifier",
       description:
-        "Convolutional neural network for flower speceis identification built with Keras, Scikit-Learn, and Pandas",
+        "Convolutional neural network for flower species identification built with Keras, Scikit-Learn, and Pandas",
       link: "https://github.com/carsonmdd/Flower-Classification",
     },
     {
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="pt-32 px-8">
+    <section id="projects" className="pt-32 px-14">
       <h1
         ref={ref}
         className={`text-center text-5xl font-semibold mb-20 invisible ${

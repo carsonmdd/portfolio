@@ -21,7 +21,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="pt-32 px-8">
+    <section id="contact" className="px-14 pt-32 pb-6">
       <h1
         ref={ref}
         className={`text-center text-5xl font-semibold mb-6 invisible ${
