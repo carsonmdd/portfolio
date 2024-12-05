@@ -50,11 +50,13 @@ const AboutSection = () => {
       </h1>
       <div
         ref={ref}
-        className={`flex flex-col items-center w-full md:flex-row md:justify-center invisible ${
-          inView && "slide-in-top-animation"
-        }`}
+        className="flex flex-col items-center w-full md:flex-row md:justify-center"
       >
-        <div className="flex flex-col justify-center p-6 max-w-[40rem] md:flex-1">
+        <div
+          className={`flex flex-col justify-center p-6 max-w-[40rem] md:flex-1 invisible ${
+            inView && "slide-in-left-animation"
+          }`}
+        >
           <FontAwesomeIcon
             icon={faUser}
             className="text-[10rem] text-emerald-400 mb-16"
