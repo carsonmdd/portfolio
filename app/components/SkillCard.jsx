@@ -3,30 +3,36 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const SkillCard = ({ icon, name }) => {
-  const [randomDelay, setRandomDelay] = useState(null);
+	const [randomDelay, setRandomDelay] = useState(null);
 
-  useEffect(() => {
-    const randomNumber = (Math.floor(Math.random() * 6) / 10).toFixed(1);
-    setRandomDelay(randomNumber);
-  }, []);
+	useEffect(() => {
+		const randomNumber = (Math.floor(Math.random() * 6) / 10).toFixed(1);
+		setRandomDelay(randomNumber);
+	}, []);
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.25,
-  });
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.25,
+	});
 
-  return (
-    <div
-      ref={ref}
-      className={`border border-emerald-500 text-center flex flex-col items-center justify-center rounded-xl p-3 w-[6.5rem] h-36 hover:-translate-y-2 transition-all duration-300 opacity-0 ${
-        inView && "fade-in-animation"
-      }`}
-      style={{ animationDelay: `${randomDelay}s` }}
-    >
-      <Image src={icon} alt={`${name} Image`} className="w-14 h-14 mb-3" />
-      <h3>{name}</h3>
-    </div>
-  );
+	return (
+		<div
+			ref={ref}
+			className={`border border-emerald-500 text-center flex flex-col items-center justify-center rounded-xl p-3 w-[6.5rem] h-36 hover:-translate-y-2 transition-all duration-300 opacity-0 ${
+				inView && "fade-in-animation"
+			}`}
+			style={{ animationDelay: `${randomDelay}s` }}
+		>
+			<Image
+				src={icon}
+				alt={`${name} Image`}
+				width={60}
+				height={60}
+				className="mb-3"
+			/>
+			<h3>{name}</h3>
+		</div>
+	);
 };
 
 export default SkillCard;
