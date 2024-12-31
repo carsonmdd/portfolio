@@ -23,7 +23,7 @@ const ProjectsSection = () => {
 			thumbnail: DionysusImg,
 			name: "Dionysus",
 			description:
-				"AI Github assitant web app built with Next.js, Google Gemini, AssemblyAI, and Stripe",
+				"AI GitHub assitant web app built with Next.js, Google Gemini, AssemblyAI, and Stripe",
 			repoLink: "https://github.com/carsonmdd/dionysus",
 			demoLink: "https://dionysus-kappa.vercel.app/",
 		},

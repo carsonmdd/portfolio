@@ -31,7 +31,7 @@ const ProjectCard = ({ thumbnail, name, description, repoLink, demoLink }) => {
 					target="_blank"
 					className="p-3 rounded-xl border-2 border-emerald-500 font-light cursor-pointer hover:bg-emerald-500 hover:border-emerald-700 transition-all duration-300"
 				>
-					<span>Github Repo</span>
+					<span>GitHub Repo</span>
 				</a>
 				{demoLink && (
 					<a
