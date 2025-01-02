@@ -89,7 +89,7 @@ const ProjectsSection = () => {
 		<section id="projects" className="pt-32 px-14">
 			<h1
 				ref={ref}
-				className={`text-center text-5xl font-semibold mb-20 invisible ${
+				className={`text-center text-5xl font-semibold mb-20 opacity-0 ${
 					inView && "slide-in-top-animation"
 				}`}
 			>

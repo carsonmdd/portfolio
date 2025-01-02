@@ -5,104 +5,115 @@
 @tailwind utilities;
 
 :root {
-  --background: #1e293b;
-  --foreground: #e4e7eb;
+	--background: #1e293b;
+	--foreground: #e4e7eb;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+	color: var(--foreground);
+	background: var(--background);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 #particle-background {
-  z-index: -1;
-  position: fixed;
+	z-index: -1;
+	position: fixed;
 }
 
 @keyframes slide-in-left {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
+	from {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 @keyframes slide-in-right {
-  from {
-    transform: translateX(50px);
-    opacity: 0;
-  }
+	from {
+		transform: translateX(50px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 @keyframes slide-in-bottom {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
+	from {
+		transform: translateY(50px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @keyframes slide-in-top {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
 
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
+	from {
+		opacity: 0;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 .slide-in-left-animation {
-  visibility: visible;
-  animation: slide-in-left 800ms ease-in-out;
+	animation-name: slide-in-left;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }
 
 .slide-in-right-animation {
-  visibility: visible;
-  animation: slide-in-right 800ms ease-in-out;
+	animation-name: slide-in-right;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }
 
 .slide-in-bottom-animation {
-  visibility: visible;
-  animation: slide-in-bottom 800ms ease-in-out;
+	animation-name: slide-in-bottom;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }
 
 .slide-in-top-animation {
-  visibility: visible;
-  animation: slide-in-top 800ms ease-in-out;
+	animation-name: slide-in-top;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }
 
 .fade-in-animation {
-  animation: fade-in 800ms ease-in-out forwards;
+	animation-name: fade-in;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }

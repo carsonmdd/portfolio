@@ -45,13 +45,19 @@ const AboutSection = () => {
 		{ id: 15, icon: JavaImg, name: "Java" },
 		{ id: 16, icon: CppImg, name: "C++" },
 	];
-	// PostgreSQl, Next.js, tRPC
+
+	const delays = Object.fromEntries(
+		Array.from({ length: skills.length }, (_, i) => {
+			const ms = i * 50 + 50;
+			return [ms, `animation-delay-[${ms}ms]`];
+		})
+	);
 
 	return (
 		<section id="about" className="pt-32">
 			<h1
 				ref={ref}
-				className={`text-center text-5xl font-semibold mb-20 invisible ${
+				className={`text-center text-5xl font-semibold mb-20 opacity-0 ${
 					inView && "slide-in-top-animation"
 				}`}
 			>
@@ -62,7 +68,7 @@ const AboutSection = () => {
 				className="flex flex-col items-center w-full md:flex-row md:justify-center"
 			>
 				<div
-					className={`flex flex-col justify-center p-6 max-w-[40rem] md:flex-1 invisible ${
+					className={`flex flex-col justify-center p-6 max-w-[40rem] md:flex-1 opacity-0 ${
 						inView && "slide-in-left-animation"
 					}`}
 				>
@@ -100,11 +106,13 @@ const AboutSection = () => {
 					</div>
 				</div>
 				<div className="grid grid-cols-3 place-items-center gap-5 w-full max-w-[25rem] p-5 md:flex-1 lg:grid-cols-4 lg:max-w-[35rem] lg:gap-10">
-					{skills.map((skill) => (
+					{skills.map((skill, index) => (
 						<SkillCard
 							key={skill.id}
 							icon={skill.icon}
 							name={skill.name}
+							delays={delays}
+							animationDelay={index * 50}
 						/>
 					))}
 				</div>
