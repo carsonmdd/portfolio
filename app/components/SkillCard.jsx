@@ -11,7 +11,7 @@ const SkillCard = ({ icon, name, delays, animationDelay }) => {
 		<div
 			ref={ref}
 			className={`border border-emerald-500 text-center flex flex-col items-center justify-center rounded-xl p-3 w-[6.5rem] h-36 hover:-translate-y-2 transition-all duration-300 opacity-0 ${
-				inView && `fade-in-animation ${delays[animationDelay]}`
+				inView && `animate-fade-in ${delays[animationDelay]}`
 			}`}
 		>
 			<Image

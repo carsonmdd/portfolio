@@ -24,7 +24,7 @@ import { useInView } from "react-intersection-observer";
 const AboutSection = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.25,
+		threshold: 0.1,
 	});
 
 	const skills = [
@@ -46,19 +46,31 @@ const AboutSection = () => {
 		{ id: 16, icon: CppImg, name: "C++" },
 	];
 
-	const delays = Object.fromEntries(
-		Array.from({ length: skills.length }, (_, i) => {
-			const ms = i * 50 + 50;
-			return [ms, `animation-delay-[${ms}ms]`];
-		})
-	);
+	const delays = {
+		50: "animation-delay-[50ms]",
+		100: "animation-delay-[100ms]",
+		150: "animation-delay-[150ms]",
+		200: "animation-delay-[200ms]",
+		250: "animation-delay-[250ms]",
+		300: "animation-delay-[300ms]",
+		350: "animation-delay-[350ms]",
+		400: "animation-delay-[400ms]",
+		450: "animation-delay-[450ms]",
+		500: "animation-delay-[500ms]",
+		550: "animation-delay-[550ms]",
+		600: "animation-delay-[600ms]",
+		650: "animation-delay-[650ms]",
+		700: "animation-delay-[700ms]",
+		750: "animation-delay-[750ms]",
+		800: "animation-delay-[800ms]",
+	};
 
 	return (
 		<section id="about" className="pt-32">
 			<h1
 				ref={ref}
 				className={`text-center text-5xl font-semibold mb-20 opacity-0 ${
-					inView && "slide-in-top-animation"
+					inView && "animate-slide-top"
 				}`}
 			>
 				{"About"}
@@ -69,7 +81,7 @@ const AboutSection = () => {
 			>
 				<div
 					className={`flex flex-col justify-center p-6 max-w-[40rem] md:flex-1 opacity-0 ${
-						inView && "slide-in-left-animation"
+						inView && "animate-slide-left"
 					}`}
 				>
 					<FontAwesomeIcon

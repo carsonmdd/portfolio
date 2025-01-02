@@ -90,7 +90,7 @@ const ProjectsSection = () => {
 			<h1
 				ref={ref}
 				className={`text-center text-5xl font-semibold mb-20 opacity-0 ${
-					inView && "slide-in-top-animation"
+					inView && "animate-slide-top"
 				}`}
 			>
 				{"Projects"}

@@ -28,48 +28,40 @@ html {
 @keyframes slide-in-left {
 	from {
 		transform: translateX(-50px);
-		opacity: 0;
 	}
 
 	to {
 		transform: translateX(0);
-		opacity: 1;
 	}
 }
 
 @keyframes slide-in-right {
 	from {
 		transform: translateX(50px);
-		opacity: 0;
 	}
 
 	to {
 		transform: translateX(0);
-		opacity: 1;
 	}
 }
 
 @keyframes slide-in-bottom {
 	from {
 		transform: translateY(50px);
-		opacity: 0;
 	}
 
 	to {
 		transform: translateY(0);
-		opacity: 1;
 	}
 }
 
 @keyframes slide-in-top {
 	from {
 		transform: translateY(-50px);
-		opacity: 0;
 	}
 
 	to {
 		transform: translateY(0);
-		opacity: 1;
 	}
 }
 
@@ -83,35 +75,35 @@ html {
 	}
 }
 
-.slide-in-left-animation {
-	animation-name: slide-in-left;
-	animation-duration: 800ms;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
+.animate-slide-left {
+	animation-name: slide-in-left, fade-in;
+	animation-duration: 800ms, 800ms;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-fill-mode: none, both;
 }
 
-.slide-in-right-animation {
-	animation-name: slide-in-right;
-	animation-duration: 800ms;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
+.animate-slide-right {
+	animation-name: slide-in-right, fade-in;
+	animation-duration: 800ms, 800ms;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-fill-mode: none, both;
 }
 
-.slide-in-bottom-animation {
-	animation-name: slide-in-bottom;
-	animation-duration: 800ms;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
+.animate-slide-bottom {
+	animation-name: slide-in-bottom, fade-in;
+	animation-duration: 800ms, 800ms;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-fill-mode: none, both;
 }
 
-.slide-in-top-animation {
-	animation-name: slide-in-top;
-	animation-duration: 800ms;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
+.animate-slide-top {
+	animation-name: slide-in-top, fade-in;
+	animation-duration: 800ms, 800ms;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-fill-mode: none, both;
 }
 
-.fade-in-animation {
+.animate-fade-in {
 	animation-name: fade-in;
 	animation-duration: 800ms;
 	animation-timing-function: ease-in-out;
