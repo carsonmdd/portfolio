@@ -1,14 +1,6 @@
 "use client";
 
 import ProjectCard from "../ProjectCard";
-import DionysusImg from "../../../public/images/dionysus-thumbnail.png";
-import InstaLogImg from "../../../public/images/InstaLog-thumbnail.png";
-import ZotMusicImg from "../../../public/images/ZotMusic-thumbnail.png";
-import FlowerClassifierImg from "../../../public/images/flower-classifier-thumbnail.png";
-import HeartDiseaseImg from "../../../public/images/heart-disease-thumbnail.jpeg";
-import MazeSolverImg from "../../../public/images/maze-solver-thumbnail.png";
-import SnakeGameImg from "../../../public/images/snake-game-thumbnail.png";
-import ProductStoreImg from "../../../public/images/product-store-thumbnail.png";
 import { useInView } from "react-intersection-observer";
 
 const ProjectsSection = () => {
@@ -20,7 +12,7 @@ const ProjectsSection = () => {
 	const projects = [
 		{
 			id: 1,
-			thumbnail: DionysusImg,
+			thumbnail: "/images/dionysus-thumbnail.png",
 			name: "Dionysus",
 			description:
 				"AI GitHub assitant web app built with Next.js, Google Gemini, AssemblyAI, and Stripe",
@@ -29,7 +21,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 2,
-			thumbnail: InstaLogImg,
+			thumbnail: "/images/InstaLog-thumbnail.png",
 			name: "InstaLog",
 			description:
 				"Offline data logging application with CSV, GPS, and Shapefile integration built with Tkinter and Pandas",
@@ -37,7 +29,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 3,
-			thumbnail: ProductStoreImg,
+			thumbnail: "/images/product-store-thumbnail.png",
 			name: "Product Store",
 			description:
 				"Full-stack general product store application built leveraging the MERN stack (MongoDB, Express.js, React, Node.js)",
@@ -45,7 +37,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 4,
-			thumbnail: FlowerClassifierImg,
+			thumbnail: "/images/flower-classifier-thumbnail.png",
 			name: "Flower Classifier",
 			description:
 				"Convolutional neural network for flower species identification built with Keras, Scikit-Learn, and Pandas",
@@ -53,7 +45,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 5,
-			thumbnail: ZotMusicImg,
+			thumbnail: "/images/ZotMusic-thumbnail.png",
 			name: "Zot Music",
 			description:
 				"Full-stack Spotify library management and recommendation application built with Flask, Bootstrap, and SQLite",
@@ -61,7 +53,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 6,
-			thumbnail: HeartDiseaseImg,
+			thumbnail: "/images/heart-disease-thumbnail.jpeg",
 			name: "Heart Disease Predictor",
 			description:
 				"Heart disease prediction model with data visualization, preprocessing, and grid search built with Scikit-Learn, Pandas, and Seaborn",
@@ -69,7 +61,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 7,
-			thumbnail: SnakeGameImg,
+			thumbnail: "/images/snake-game-thumbnail.png",
 			name: "Snake Game",
 			description:
 				"Classic snake game developed with Pygame, featuring dynamic gameplay, a score-tracking system, and powerups",
@@ -77,7 +69,7 @@ const ProjectsSection = () => {
 		},
 		{
 			id: 8,
-			thumbnail: MazeSolverImg,
+			thumbnail: "/images/maze-solver-thumbnail.png",
 			name: "Maze Solver",
 			description:
 				"Maze generator and solver utilizing BFS and DFS algorithms built in Java",

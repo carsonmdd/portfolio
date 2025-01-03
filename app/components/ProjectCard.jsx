@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 const ProjectCard = ({ thumbnail, name, description, repoLink, demoLink }) => {
@@ -15,7 +14,7 @@ const ProjectCard = ({ thumbnail, name, description, repoLink, demoLink }) => {
 			}`}
 		>
 			<div className="h-[15rem] flex justify-center p-5">
-				<Image
+				<img
 					src={thumbnail}
 					alt={`${name} Thumbnail`}
 					className="object-contain"

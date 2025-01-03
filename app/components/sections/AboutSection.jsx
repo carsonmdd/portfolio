@@ -1,21 +1,5 @@
 "use client";
 
-import ReactImg from "../../../public/images/react.png";
-import MongoDBImg from "../../../public/images/mongodb.png";
-import ExpressImg from "../../../public/images/express.png";
-import TensorflowImg from "../../../public/images/tensorflow.png";
-import NodeImg from "../../../public/images/node.png";
-import ScikitLearnImg from "../../../public/images/scikit-learn.png";
-import JavaImg from "../../../public/images/java.png";
-import CppImg from "../../../public/images/c++.png";
-import GitImg from "../../../public/images/git.png";
-import FlaskImg from "../../../public/images/flask.png";
-import PostgreSQLImg from "../../../public/images/postgresql.png";
-import NextJSImg from "../../../public/images/nextjs.png";
-import tRPCImg from "../../../public/images/trpc.png";
-import ShadCNImg from "../../../public/images/shadcn.png";
-import TailwindImg from "../../../public/images/tailwind.png";
-import PandasImg from "../../../public/images/pandas.png";
 import SkillCard from "../SkillCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
@@ -28,22 +12,22 @@ const AboutSection = () => {
 	});
 
 	const skills = [
-		{ id: 1, icon: ReactImg, name: "React" },
-		{ id: 2, icon: MongoDBImg, name: "MongoDB" },
-		{ id: 3, icon: ExpressImg, name: "Express.js" },
-		{ id: 4, icon: NodeImg, name: "Node.js" },
-		{ id: 5, icon: FlaskImg, name: "Flask" },
-		{ id: 6, icon: PostgreSQLImg, name: "PostgreSQL" },
-		{ id: 7, icon: NextJSImg, name: "Next.js" },
-		{ id: 8, icon: tRPCImg, name: "tRPC" },
-		{ id: 9, icon: ShadCNImg, name: "ShadCN" },
-		{ id: 10, icon: TailwindImg, name: "Tailwind CSS" },
-		{ id: 11, icon: ScikitLearnImg, name: "Scikit-Learn" },
-		{ id: 12, icon: TensorflowImg, name: "Tensorflow" },
-		{ id: 13, icon: PandasImg, name: "Pandas" },
-		{ id: 14, icon: GitImg, name: "Git" },
-		{ id: 15, icon: JavaImg, name: "Java" },
-		{ id: 16, icon: CppImg, name: "C++" },
+		{ id: 1, image: "/images/react.png", name: "React" },
+		{ id: 2, image: "/images/mongodb.png", name: "MongoDB" },
+		{ id: 3, image: "/images/express.png", name: "Express.js" },
+		{ id: 4, image: "/images/node.png", name: "Node.js" },
+		{ id: 5, image: "/images/flask.png", name: "Flask" },
+		{ id: 6, image: "/images/postgresql.png", name: "PostgreSQL" },
+		{ id: 7, image: "/images/nextjs.png", name: "Next.js" },
+		{ id: 8, image: "/images/trpc.png", name: "tRPC" },
+		{ id: 9, image: "/images/shadcn.png", name: "ShadCN" },
+		{ id: 10, image: "/images/tailwind.png", name: "Tailwind CSS" },
+		{ id: 11, image: "/images/scikit-learn.png", name: "Scikit-Learn" },
+		{ id: 12, image: "/images/tensorflow.png", name: "Tensorflow" },
+		{ id: 13, image: "/images/pandas.png", name: "Pandas" },
+		{ id: 14, image: "/images/git.png", name: "Git" },
+		{ id: 15, image: "/images/java.png", name: "Java" },
+		{ id: 16, image: "/images/c++.png", name: "C++" },
 	];
 
 	const delays = {
@@ -121,7 +105,7 @@ const AboutSection = () => {
 					{skills.map((skill, index) => (
 						<SkillCard
 							key={skill.id}
-							icon={skill.icon}
+							image={skill.image}
 							name={skill.name}
 							delays={delays}
 							animationDelay={index * 50}

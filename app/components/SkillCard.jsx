@@ -1,7 +1,6 @@
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-const SkillCard = ({ icon, name, delays, animationDelay }) => {
+const SkillCard = ({ image, name, delays, animationDelay }) => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 		threshold: 0.25,
@@ -14,11 +13,11 @@ const SkillCard = ({ icon, name, delays, animationDelay }) => {
 				inView && `animate-fade-in ${delays[animationDelay]}`
 			}`}
 		>
-			<Image
-				src={icon}
+			<img
+				src={image}
 				alt={`${name} Image`}
-				width={60}
-				height={60}
+				width="60"
+				height="60"
 				className="mb-3"
 			/>
 			<h3>{name}</h3>
