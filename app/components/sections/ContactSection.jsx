@@ -11,13 +11,24 @@ const ContactSection = () => {
 	});
 
 	const contactButtons = [
-		{ id: 1, link: "mailto:cmd52465@gmail.com", icon: AiOutlineMail },
+		{
+			id: 1,
+			link: "mailto:cmd52465@gmail.com",
+			icon: AiOutlineMail,
+			title: "Send me an email",
+		},
 		{
 			id: 2,
 			link: "https://www.linkedin.com/in/carsonmdavis/",
 			icon: AiFillLinkedin,
+			title: "Connect with me on LinkedIn",
 		},
-		{ id: 3, link: "https://github.com/carsonmdd/", icon: AiFillGithub },
+		{
+			id: 3,
+			link: "https://github.com/carsonmdd/",
+			icon: AiFillGithub,
+			title: "Visit my GitHub",
+		},
 	];
 
 	return (
@@ -50,6 +61,7 @@ const ContactSection = () => {
 							key={button.id}
 							link={button.link}
 							icon={<button.icon />}
+							title={button.title}
 						/>
 					))}
 				</div>

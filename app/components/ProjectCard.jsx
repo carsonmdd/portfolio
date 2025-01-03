@@ -23,7 +23,7 @@ const ProjectCard = ({ thumbnail, name, description, repoLink, demoLink }) => {
 			</div>
 			<div className="px-5">
 				<div className="h-[10rem]">
-					<h3 className="text-xl mb-2">{name}</h3>
+					<h2 className="text-xl mb-2">{name}</h2>
 					<p className="leading-7 mb-8">{description}</p>
 				</div>
 				<a
