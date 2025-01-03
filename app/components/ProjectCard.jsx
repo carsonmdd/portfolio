@@ -1,6 +1,13 @@
 import { useInView } from "react-intersection-observer";
 
-const ProjectCard = ({ thumbnail, name, description, repoLink, demoLink }) => {
+const ProjectCard = ({
+	thumbnail,
+	alt,
+	name,
+	description,
+	repoLink,
+	demoLink,
+}) => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 		threshold: 0.15,
@@ -14,11 +21,7 @@ const ProjectCard = ({ thumbnail, name, description, repoLink, demoLink }) => {
 			}`}
 		>
 			<div className="h-[15rem] flex justify-center p-5">
-				<img
-					src={thumbnail}
-					alt={`${name} Thumbnail`}
-					className="object-contain"
-				/>
+				<img src={thumbnail} alt={alt} className="object-contain" />
 			</div>
 			<div className="px-5">
 				<div className="h-[10rem]">

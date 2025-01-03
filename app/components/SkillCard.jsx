@@ -15,7 +15,7 @@ const SkillCard = ({ image, name, delays, animationDelay }) => {
 		>
 			<img
 				src={image}
-				alt={`${name} Image`}
+				alt={`${name} icon`}
 				width="60"
 				height="60"
 				className="mb-3"

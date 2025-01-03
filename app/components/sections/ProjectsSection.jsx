@@ -13,6 +13,7 @@ const ProjectsSection = () => {
 		{
 			id: 1,
 			thumbnail: "/images/dionysus-thumbnail.png",
+			alt: "Screenshot of Dionysus dashboard",
 			name: "Dionysus",
 			description:
 				"AI GitHub assitant web app built with Next.js, Google Gemini, AssemblyAI, and Stripe",
@@ -22,6 +23,7 @@ const ProjectsSection = () => {
 		{
 			id: 2,
 			thumbnail: "/images/InstaLog-thumbnail.png",
+			alt: "Screenshot of InstaLog interface",
 			name: "InstaLog",
 			description:
 				"Offline data logging application with CSV, GPS, and Shapefile integration built with Tkinter and Pandas",
@@ -30,6 +32,7 @@ const ProjectsSection = () => {
 		{
 			id: 3,
 			thumbnail: "/images/product-store-thumbnail.png",
+			alt: "Screenshot of Product Store home page",
 			name: "Product Store",
 			description:
 				"Full-stack general product store application built leveraging the MERN stack (MongoDB, Express.js, React, Node.js)",
@@ -38,6 +41,7 @@ const ProjectsSection = () => {
 		{
 			id: 4,
 			thumbnail: "/images/flower-classifier-thumbnail.png",
+			alt: "Screenshot showing different flower species",
 			name: "Flower Classifier",
 			description:
 				"Convolutional neural network for flower species identification built with Keras, Scikit-Learn, and Pandas",
@@ -46,6 +50,7 @@ const ProjectsSection = () => {
 		{
 			id: 5,
 			thumbnail: "/images/ZotMusic-thumbnail.png",
+			alt: "Screenshot of Zot Music merge page",
 			name: "Zot Music",
 			description:
 				"Full-stack Spotify library management and recommendation application built with Flask, Bootstrap, and SQLite",
@@ -54,6 +59,7 @@ const ProjectsSection = () => {
 		{
 			id: 6,
 			thumbnail: "/images/heart-disease-thumbnail.jpeg",
+			alt: "Illustration of a glowing anatomical heart to represent heart disease",
 			name: "Heart Disease Predictor",
 			description:
 				"Heart disease prediction model with data visualization, preprocessing, and grid search built with Scikit-Learn, Pandas, and Seaborn",
@@ -62,6 +68,7 @@ const ProjectsSection = () => {
 		{
 			id: 7,
 			thumbnail: "/images/snake-game-thumbnail.png",
+			alt: "Screenshot of Snake Game interface",
 			name: "Snake Game",
 			description:
 				"Classic snake game developed with Pygame, featuring dynamic gameplay, a score-tracking system, and powerups",
@@ -70,6 +77,7 @@ const ProjectsSection = () => {
 		{
 			id: 8,
 			thumbnail: "/images/maze-solver-thumbnail.png",
+			alt: "Screenshot of Maze Solver output showing an unsolved and solved maze",
 			name: "Maze Solver",
 			description:
 				"Maze generator and solver utilizing BFS and DFS algorithms built in Java",
@@ -92,6 +100,7 @@ const ProjectsSection = () => {
 					<ProjectCard
 						key={project.id}
 						thumbnail={project.thumbnail}
+						alt={project.alt}
 						name={project.name}
 						description={project.description}
 						repoLink={project.repoLink}
