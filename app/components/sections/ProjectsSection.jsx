@@ -37,6 +37,7 @@ const ProjectsSection = () => {
 			description:
 				'Wildfire and shelter locator web app built with Next.js and Tailwind CSS',
 			repoLink: 'https://github.com/carsonmdd/shelterfy',
+			devpostLink: 'https://devpost.com/software/shelterfy',
 		},
 		{
 			id: 4,
@@ -114,6 +115,7 @@ const ProjectsSection = () => {
 						description={project.description}
 						repoLink={project.repoLink}
 						demoLink={project.demoLink}
+						devpostLink={project.devpostLink}
 					/>
 				))}
 			</div>
