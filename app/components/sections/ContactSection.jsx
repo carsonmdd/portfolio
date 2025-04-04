@@ -1,6 +1,6 @@
 'use client';
 
-import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { contacts } from '@/app/data/contactsData';
 import ContactButton from '../ContactButton';
 import { useInView } from 'react-intersection-observer';
 
@@ -10,22 +10,10 @@ const ContactSection = () => {
 		threshold: 0.1,
 	});
 
-	const contactButtons = [
-		{
-			link: 'mailto:cmd52465@gmail.com',
-			icon: AiOutlineMail,
-			title: 'Send me an email',
-		},
-		{
-			link: 'https://www.linkedin.com/in/carsonmdavis/',
-			icon: AiFillLinkedin,
-			title: 'Connect with me on LinkedIn',
-		},
-		{
-			link: 'https://github.com/carsonmdd/',
-			icon: AiFillGithub,
-			title: 'Visit my GitHub',
-		},
+	const delays = [
+		'animation-delay-[400ms]',
+		'animation-delay-[500ms]',
+		'animation-delay-[600ms]',
 	];
 
 	return (
@@ -33,7 +21,7 @@ const ContactSection = () => {
 			<h1
 				ref={ref}
 				className={`text-center text-5xl font-semibold mb-6 opacity-0 ${
-					inView && 'animate-slide-left'
+					inView && 'animate-slide-bottom'
 				}`}
 			>
 				{'Contact'}
@@ -42,23 +30,25 @@ const ContactSection = () => {
 				<p
 					ref={ref}
 					className={`mb-8 text-xl opacity-0 ${
-						inView && 'animate-slide-right'
+						inView && 'animate-slide-bottom animation-delay-150'
 					}`}
 				>
 					{"Have a question or want to work together? Let's connect!"}
 				</p>
 				<div
 					ref={ref}
-					className={`text-4xl text-emerald-500 flex justify-evenly max-w-xs mx-auto opacity-0 ${
-						inView && 'animate-slide-bottom'
-					}`}
+					className={`text-4xl text-emerald-500 flex justify-evenly max-w-[17rem] mx-auto`}
 				>
-					{contactButtons.map((button, index) => (
+					{contacts.map((button, index) => (
 						<ContactButton
 							key={index}
+							ref={ref}
 							link={button.link}
 							icon={<button.icon />}
 							title={button.title}
+							classes={`opacity-0 ${delays[index]} ${
+								inView && 'animate-slide-bottom'
+							}`}
 						/>
 					))}
 				</div>
