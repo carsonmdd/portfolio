@@ -11,8 +11,8 @@ const HomeSection = () => {
 
 	return (
 		<section
-			id="home"
-			className="w-full h-screen flex flex-col items-center justify-center text-center pt-6 px-6"
+			id='home'
+			className='w-full h-screen flex flex-col items-center justify-center text-center pt-6 px-6'
 		>
 			<h1
 				ref={ref}
@@ -21,7 +21,7 @@ const HomeSection = () => {
 				}`}
 			>
 				{"Hi, I'm "}
-				<span className="text-emerald-500">{"Carson"}</span>.
+				<span className='text-emerald-500'>{"Carson"}</span>.
 			</h1>
 			<p
 				ref={ref}
@@ -34,14 +34,14 @@ const HomeSection = () => {
 				}
 			</p>
 			<a
-				href="#about"
+				href='#about'
 				ref={ref}
-				className={`flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-light hover:shadow-[inset_12rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms] opacity-0 ${
+				className={`flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-[500] hover:shadow-[inset_13rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms] opacity-0 ${
 					inView && "animate-slide-bottom animation-delay-300"
 				}`}
 			>
-				<span className="mr-2">{"View my work"}</span>
-				<HiOutlineArrowSmallDown className="my-auto" />
+				<span className='mr-2'>{"View my work"}</span>
+				<HiOutlineArrowSmallDown className='my-auto' />
 			</a>
 		</section>
 	);

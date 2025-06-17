@@ -1,3 +1,6 @@
+import { AiFillGithub } from "react-icons/ai";
+import { SiDevpost } from "react-icons/si";
+import { FiExternalLink } from "react-icons/fi";
 import { useInView } from "react-intersection-observer";
 
 const ProjectCard = ({
@@ -32,16 +35,18 @@ const ProjectCard = ({
 				<a
 					href={repoLink}
 					target='_blank'
-					className='p-3 rounded-xl border-2 border-emerald-500 font-light cursor-pointer hover:bg-emerald-500 hover:border-emerald-700 transition-all duration-300'
+					className='inline-flex items-center justify-center gap-2 px-3 py-2 rounded-xl border-2 border-emerald-500 text-emerald-500 font-medium cursor-pointer hover:bg-emerald-500 hover:text-white hover:border-emerald-700 transition-all duration-300'
 				>
-					<span>GitHub Repo</span>
+					<AiFillGithub className='text-[1.4rem]' />
+					<span>GitHub</span>
 				</a>
 				{demoLink && (
 					<a
 						href={demoLink}
 						target='_blank'
-						className='p-3 ml-3 rounded-xl border-2 border-emerald-500 font-light cursor-pointer hover:bg-emerald-500 hover:border-emerald-700 transition-all duration-300'
+						className='inline-flex items-center justify-center gap-2 px-3 py-2 ml-3 rounded-xl border-2 border-emerald-500 text-emerald-500 font-medium cursor-pointer hover:bg-emerald-500 hover:text-white hover:border-emerald-700 transition-all duration-300'
 					>
+						<FiExternalLink className='text-[1.4rem]' />
 						<span>Live Demo</span>
 					</a>
 				)}
@@ -49,8 +54,9 @@ const ProjectCard = ({
 					<a
 						href={devpostLink}
 						target='_blank'
-						className='p-3 ml-3 rounded-xl border-2 border-emerald-500 font-light cursor-pointer hover:bg-emerald-500 hover:border-emerald-700 transition-all duration-300'
+						className='inline-flex items-center justify-center gap-2 px-3 py-2 ml-3 rounded-xl border-2 border-emerald-500 text-emerald-500 font-medium cursor-pointer hover:bg-emerald-500 hover:text-white hover:border-emerald-700 transition-all duration-300'
 					>
+						<SiDevpost className='text-[1.4rem]' />
 						<span>Devpost</span>
 					</a>
 				)}
