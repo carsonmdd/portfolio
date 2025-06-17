@@ -20,7 +20,7 @@ const ProjectCard = ({
 	return (
 		<div
 			ref={ref}
-			className={`border border-emerald-500 rounded-xl w-[22rem] h-[30rem] sm:w-[448px] sm:h-[480px] bg-[#2e405a] shadow-2xl hover:-translate-y-2 transition-all duration-300 opacity-0 ${
+			className={`border border-emerald-500 rounded-xl w-[22rem] h-[30rem] sm:w-[448px] sm:h-[480px] bg-[#2e405a] shadow-2xl  hover:scale-[1.03] transition-all duration-300 opacity-0 ${
 				inView && `animate-slide-bottom`
 			}`}
 		>
