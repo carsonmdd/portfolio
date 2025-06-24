@@ -83,20 +83,4 @@ export const projects = [
 			"Heart disease prediction model with data visualization, preprocessing, and grid search built with Scikit-Learn, Pandas, and Seaborn",
 		repoLink: "https://github.com/carsonmdd/Heart-Disease-Predictor",
 	},
-	{
-		thumbnail: "/images/snake-game-thumbnail.png",
-		alt: "Screenshot of Snake Game interface",
-		name: "Snake Game",
-		description:
-			"Classic snake game developed with Pygame, featuring dynamic gameplay, a score-tracking system, and powerups",
-		repoLink: "https://github.com/carsonmdd/Snake-Game",
-	},
-	{
-		thumbnail: "/images/maze-solver-thumbnail.png",
-		alt: "Screenshot of Maze Solver output showing an unsolved and solved maze",
-		name: "Maze Solver",
-		description:
-			"Maze generator and solver utilizing BFS and DFS algorithms built in Java",
-		repoLink: "https://github.com/carsonmdd/Maze-Solver",
-	},
 ];
