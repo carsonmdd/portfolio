@@ -1,8 +1,6 @@
 "use client";
 
 import SkillCard from "../SkillCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { useInView } from "react-intersection-observer";
 import { skills } from "@/app/data/skillsData";
 
@@ -50,9 +48,10 @@ const AboutSection = () => {
 						inView && "animate-slide-left"
 					}`}
 				>
-					<FontAwesomeIcon
-						icon={faUser}
-						className='text-[10rem] text-emerald-400 mb-16'
+					<img
+						src='/images/profile.jpeg'
+						alt='Profile picture'
+						className='aspect-square w-[16rem] sm:w-[20rem] md:w-[24rem] object-cover mx-auto rounded-full mb-16'
 					/>
 					<div>
 						<h2 className='font-medium mb-2 text-3xl'>
