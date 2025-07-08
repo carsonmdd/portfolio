@@ -29,8 +29,10 @@ const ProjectCard = ({
 			</div>
 			<div className='px-5'>
 				<div className='h-[10rem]'>
-					<h2 className='text-xl mb-2'>{name}</h2>
-					<p className='leading-7 mb-8'>{description}</p>
+					<h2 className='text-2xl font-semibold mb-3'>{name}</h2>
+					<p className='text-gray-300 leading-7 mb-8'>
+						{description}
+					</p>
 				</div>
 				<a
 					href={repoLink}

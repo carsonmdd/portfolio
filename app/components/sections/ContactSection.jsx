@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { contacts } from '@/app/data/contactsData';
-import ContactButton from '../ContactButton';
-import { useInView } from 'react-intersection-observer';
+import { contacts } from "@/app/data/contactsData";
+import ContactButton from "../ContactButton";
+import { useInView } from "react-intersection-observer";
 
 const ContactSection = () => {
 	const { ref, inView } = useInView({
@@ -11,9 +11,9 @@ const ContactSection = () => {
 	});
 
 	const delays = [
-		'animation-delay-[400ms]',
-		'animation-delay-[500ms]',
-		'animation-delay-[600ms]',
+		"animation-delay-[400ms]",
+		"animation-delay-[500ms]",
+		"animation-delay-[600ms]",
 	];
 
 	return (
@@ -21,16 +21,16 @@ const ContactSection = () => {
 			<h1
 				ref={ref}
 				className={`text-center text-5xl font-semibold mb-6 opacity-0 ${
-					inView && 'animate-slide-bottom'
+					inView && "animate-slide-bottom"
 				}`}
 			>
-				{'Contact'}
+				{"Contact"}
 			</h1>
 			<div className='text-center'>
 				<p
 					ref={ref}
 					className={`mb-8 text-xl opacity-0 ${
-						inView && 'animate-slide-bottom animation-delay-150'
+						inView && "animate-slide-bottom animation-delay-150"
 					}`}
 				>
 					{"Have a question or want to work together? Let's connect!"}
@@ -47,7 +47,7 @@ const ContactSection = () => {
 							icon={<button.icon />}
 							title={button.title}
 							classes={`opacity-0 ${delays[index]} ${
-								inView && 'animate-slide-bottom'
+								inView && "animate-slide-bottom"
 							}`}
 						/>
 					))}
