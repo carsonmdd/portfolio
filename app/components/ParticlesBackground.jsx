@@ -60,7 +60,7 @@ const ParticlesBackground = () => {
 				},
 				links: {
 					color: "#ffffff",
-					distance: 150,
+					distance: 130,
 					enable: true,
 					opacity: 0.5,
 					width: 1,
@@ -72,14 +72,14 @@ const ParticlesBackground = () => {
 						default: "bounce",
 					},
 					random: false,
-					speed: 0.7,
+					speed: 0.4,
 					straight: false,
 				},
 				number: {
 					density: {
 						enable: true,
 					},
-					value: 80,
+					value: 70,
 				},
 				opacity: {
 					value: 0.5,
@@ -88,7 +88,7 @@ const ParticlesBackground = () => {
 					type: "circle",
 				},
 				size: {
-					value: { min: 1, max: 5 },
+					value: { min: 1, max: 3 },
 				},
 			},
 			detectRetina: true,
