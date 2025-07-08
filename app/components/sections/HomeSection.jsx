@@ -36,12 +36,12 @@ const HomeSection = () => {
 			<a
 				href='#about'
 				ref={ref}
-				className={`flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-[500] hover:shadow-[inset_13rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms] opacity-0 ${
+				className={`group flex p-3 text-xl rounded-xl border-2 border-emerald-500 font-[500] hover:shadow-[inset_13rem_0_0_0] hover:shadow-emerald-600 hover:border-emerald-500 transition-[box-shadow, border-color] duration-[300ms,300ms] opacity-0 ${
 					inView && "animate-slide-bottom animation-delay-300"
 				}`}
 			>
 				<span className='mr-2'>{"View my work"}</span>
-				<HiOutlineArrowSmallDown className='my-auto' />
+				<HiOutlineArrowSmallDown className='text-2xl my-auto transition-transform group-hover:translate-y-1' />
 			</a>
 		</section>
 	);
