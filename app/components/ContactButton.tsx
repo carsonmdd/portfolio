@@ -1,4 +1,11 @@
-const ContactButton = ({ link, icon, title, classes }) => {
+type Props = {
+	link: string;
+	icon: React.ReactNode;
+	title: string;
+	classes: string;
+};
+
+const ContactButton = ({ link, icon, title, classes }: Props) => {
 	return (
 		<a
 			href={link}

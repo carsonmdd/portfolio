@@ -1,8 +1,8 @@
 "use client";
 
+import { skills } from "../../data/skillsData";
 import SkillCard from "../SkillCard";
 import { useInView } from "react-intersection-observer";
-import { skills } from "@/app/data/skillsData";
 
 const AboutSection = () => {
 	const { ref, inView } = useInView({
@@ -10,24 +10,24 @@ const AboutSection = () => {
 		threshold: 0.1,
 	});
 
-	const delays = {
-		50: "animation-delay-[50ms]",
-		100: "animation-delay-[100ms]",
-		150: "animation-delay-[150ms]",
-		200: "animation-delay-[200ms]",
-		250: "animation-delay-[250ms]",
-		300: "animation-delay-[300ms]",
-		350: "animation-delay-[350ms]",
-		400: "animation-delay-[400ms]",
-		450: "animation-delay-[450ms]",
-		500: "animation-delay-[500ms]",
-		550: "animation-delay-[550ms]",
-		600: "animation-delay-[600ms]",
-		650: "animation-delay-[650ms]",
-		700: "animation-delay-[700ms]",
-		750: "animation-delay-[750ms]",
-		800: "animation-delay-[800ms]",
-	};
+	const delays = new Map<number, string>([
+		[50, "animation-delay-[50ms]"],
+		[100, "animation-delay-[100ms]"],
+		[150, "animation-delay-[150ms]"],
+		[200, "animation-delay-[200ms]"],
+		[250, "animation-delay-[250ms]"],
+		[300, "animation-delay-[300ms]"],
+		[350, "animation-delay-[350ms]"],
+		[400, "animation-delay-[400ms]"],
+		[450, "animation-delay-[450ms]"],
+		[500, "animation-delay-[500ms]"],
+		[550, "animation-delay-[550ms]"],
+		[600, "animation-delay-[600ms]"],
+		[650, "animation-delay-[650ms]"],
+		[700, "animation-delay-[700ms]"],
+		[750, "animation-delay-[750ms]"],
+		[800, "animation-delay-[800ms]"],
+	]);
 
 	return (
 		<section id='about' className='pt-32'>

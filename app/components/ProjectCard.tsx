@@ -3,6 +3,16 @@ import { SiDevpost } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 import { useInView } from "react-intersection-observer";
 
+type Props = {
+	thumbnail: string;
+	alt: string;
+	name: string;
+	description: string;
+	repoLink: string;
+	demoLink: string;
+	devpostLink: string;
+};
+
 const ProjectCard = ({
 	thumbnail,
 	alt,
@@ -11,7 +21,7 @@ const ProjectCard = ({
 	repoLink,
 	demoLink,
 	devpostLink,
-}) => {
+}: Props) => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 		threshold: 0.15,

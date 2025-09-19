@@ -1,6 +1,14 @@
+import React from "react";
 import { useInView } from "react-intersection-observer";
 
-const SkillCard = ({ image, name, delays, animationDelay }) => {
+type Props = {
+	image: string;
+	name: string;
+	delays: Map<number, string>;
+	animationDelay: number;
+};
+
+const SkillCard = ({ image, name, delays, animationDelay }: Props) => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 		threshold: 0.25,

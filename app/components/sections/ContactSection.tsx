@@ -1,6 +1,6 @@
 "use client";
 
-import { contacts } from "@/app/data/contactsData";
+import { contacts } from "../../data/contactsData";
 import ContactButton from "../ContactButton";
 import { useInView } from "react-intersection-observer";
 
@@ -10,7 +10,7 @@ const ContactSection = () => {
 		threshold: 0.1,
 	});
 
-	const delays = [
+	const delays: string[] = [
 		"animation-delay-[400ms]",
 		"animation-delay-[500ms]",
 		"animation-delay-[600ms]",

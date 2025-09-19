@@ -1,4 +1,6 @@
-export const projects = [
+import { Project } from "../types/project";
+
+export const projects: Project[] = [
 	{
 		thumbnail: "/images/midi-air-thumbnail.png",
 		alt: "Screenshot of Midi-Air home page",
