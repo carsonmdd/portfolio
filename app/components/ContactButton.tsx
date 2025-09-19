@@ -23,4 +23,6 @@ const ContactButton = forwardRef<HTMLAnchorElement, Props>(
 	}
 );
 
+ContactButton.displayName = "ContactButton";
+
 export default ContactButton;
